@@ -29,12 +29,12 @@ $plataform = mysqli_fetch_assoc(mysqli_query($conn, $consultar_plataform));
     <title> DashBoard </title>
 
 
-<body>
-    <div id="atualizar_plataforma">
+<body onclick="removeErrorMessage()">
+    <div  id="atualizar_plataforma">
         <form action="./atualizar-plataforma.php" method="post">
 
             <div id="atualize_plataforma">
-                <div id="atualiz_plataforma">
+                <div id="atualize_plataforma">
 
 
                     <label  for="Plataforma"> Plataforma </label>
@@ -45,7 +45,7 @@ $plataform = mysqli_fetch_assoc(mysqli_query($conn, $consultar_plataform));
 
 
                 <?php if ($error != null) { ?>
-                    <div class="error_message"><?= $error ?></div>
+                    <div id="error-message" class="error_message"><?= $error ?></div>
 
                 <?php } ?>
 

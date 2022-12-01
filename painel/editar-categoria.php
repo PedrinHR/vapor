@@ -33,12 +33,12 @@ $consultar_categoria = "SELECT nome FROM categoria WHERE id = '{$id_categoria}'"
     <title> DashBoard </title>
 
 
-    <body>
+    <body onclick="removeErrorMessage()">
     <div id="atualizar_categoria">
         <form action="./atualizar-categoria.php" method="post">
 
             <div id="atualize_categoria">
-                <div id="atualiz_categoria">
+                <div id="atualizar_categoria">
 
             
                     <label for="categoria"> Categoria </label>
@@ -49,7 +49,7 @@ $consultar_categoria = "SELECT nome FROM categoria WHERE id = '{$id_categoria}'"
 
 
                 <?php if($error != null) { ?>
-    <div class="error_message"><?=$error?></div>
+    <div id="error-message" class="error_message"><?=$error?></div>
     
     <?php } ?>
 

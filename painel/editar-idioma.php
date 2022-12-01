@@ -39,7 +39,7 @@ $consultar_idioma = "SELECT nome FROM idioma WHERE id = '{$id_idioma}'";
         <form action="./atualizar-idioma.php" method="post">
 
             <div id="atualize_idioma">
-                <div id="atualiz_idioma">
+                <div id="atualize_idioma">
 
             
                     <label for="idioma"> Idioma </label>

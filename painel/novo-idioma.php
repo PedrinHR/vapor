@@ -23,11 +23,11 @@ $error = $_GET['error'] ?? null;
     <title> DashBoard <?=$titulo_pagina?></title>
 
 
-    <body>
+    <body onclick="removeErrorMessage()">
     <div id="adicionar_idioma">
         <form action="./cadastrar-idioma.php" method="post">
 
-            <div id="adicione_novo_idioma">
+            <div  id="adicione_novo_idioma">
                 <div id="nome_novo_idioma">
 
                     <span> Adicione aqui um novo Idioma</span>
@@ -42,7 +42,7 @@ $error = $_GET['error'] ?? null;
 
                 <?php
                 if ($error != null) {  ?>
-                    <div class="error_salva"><?= $error ?></div>
+                    <div id="error-message" class="error_salva"><?= $error ?></div>
                 <?php } ?>
 
 
