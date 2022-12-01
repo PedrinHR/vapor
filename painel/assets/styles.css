@@ -36,9 +36,10 @@
     color:#ffffff; 
 }
 .login .padding { padding:1.5em; float:left;  }
-.login label { 
+.login label {
+    display: flex; 
     width:100%; 
-    float:left; 
+    flex-direction: column;
     margin-bottom:1em; 
 }
 .login .campos { 
@@ -422,4 +423,15 @@ table{ /** Faz o estilo da tabela inteira. **/
         color: aliceblue;
 
      }
+     
+     .error-message{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(226, 27, 27);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        width: 25%;
+        font-weight: bold;
+    }
      
