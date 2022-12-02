@@ -20,10 +20,11 @@ $error = $_GET['error'] ?? null;
     <link rel="stylesheet" href="assets/global.css">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js"></script>
     <title> DashBoard </title>
 
 
-    <body>
+    <body onclick="removerElementoPorId('erro-nova-categoria')">
     <div id="adicionar_categoria">
         <form action="./cadastrar-categoria.php" method="post">
 
@@ -42,7 +43,7 @@ $error = $_GET['error'] ?? null;
 
                 <?php
                 if ($error != null) {  ?>
-                    <div class="error_salva"><?= $error ?></div>
+                    <div id="erro-nova-categoria" class="error_salva"><?= $error ?></div>
                 <?php } ?>
 
 

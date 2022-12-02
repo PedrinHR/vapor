@@ -20,7 +20,7 @@ $error_message = $_GET['error'] ?? null;
   <title> Login </title>
 </head>
 
-<body onclick="removeErrorMessage()">
+<body onclick="removerElementoPorId('error-message')">
 
   <section class="boxLogin container">
     <div class="content">

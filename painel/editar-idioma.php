@@ -34,7 +34,7 @@ $consultar_idioma = "SELECT nome FROM idioma WHERE id = '{$id_idioma}'";
     <title> DashBoard </title>
 
 
-    <body onclick="removeErrorMessage()">
+    <body onclick=" removerElementoPorId('error-editar-idioma')">
     <div id="atualizar_idioma">
         <form action="./atualizar-idioma.php" method="post">
 
@@ -50,7 +50,7 @@ $consultar_idioma = "SELECT nome FROM idioma WHERE id = '{$id_idioma}'";
 
 
                 <?php if($error != null) { ?>
-    <div id="error-message" class="error_message"><?=$error?></div>
+    <div id="error-editar-idioma" class="error_message"><?=$error?></div>
     
     <?php } ?>
 

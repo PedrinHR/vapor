@@ -24,7 +24,7 @@ $error = $_GET['error'] ?? null;
     <title> DashBoard </title>
 
 
-    <body>
+    <body onclick="removerElementoPorId('error-salva')">
     <div id="adicionar_plataforma">
         <form action="./cadastrar-plataforma.php" method="post">
 
@@ -43,7 +43,7 @@ $error = $_GET['error'] ?? null;
 
                 <?php
                 if ($error != null) {  ?>
-                    <div class="error_salva"><?= $error ?></div>
+                    <div id="error-salva" class="error_salva"><?= $error ?></div>
                 <?php } ?>
 
 
