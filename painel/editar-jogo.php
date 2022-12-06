@@ -43,7 +43,7 @@ $jogao = mysqli_fetch_assoc(mysqli_query($conn, $query_jogao));
 
                     <label for="nome">Nome*</label>
 
-                    <input required title="Nome" type="text" name="nome" class="marcacoes" id="nome" value="<?= $jogao['nome'] ?>">
+                    <input onkeyup="transformar_texto_maiusculo(this)" required title="Nome" type="text" name="nome" class="marcacoes" id="nome" value="<?= $jogao['nome'] ?>">
 
                 </div>
                 <div class="marcacoes_jogo">

@@ -26,14 +26,18 @@ require('conexao.php');
 </head>
 
 <body>
-<?php require('./modulos/side-menu.php') ?>
+    <?php require('./modulos/side-menu.php') ?>
     <div id="principal">
-        
+
         <div id="sub-container">
             <div id="top-menu">
                 <div id="sub-menu">
                     <div id="nomesite"> DashBoard </div>
-                    <div id="nomeadm">  <b>Olá, Administrador!</b>  </div>
+                    <div id="nomeadm"> <b>Olá, Administrador!</b> <div id="hora"></div></div>
                 </div>
-            </div>
-        
+        <script>
+        updateClock()
+        iniciar_mudanca_de_cor()
+        </script>
+      
+</body>

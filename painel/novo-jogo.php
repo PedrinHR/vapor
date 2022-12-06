@@ -37,7 +37,7 @@ $jogo_listado_categoria = mysqli_query($conn, $query_jogo_listado_categoria);
 
                     <label for="nome">Nome*</label>
 
-                    <input required title="Nome" type="text" name="nome" class="marcacoes" id="nome" placeholder="Nome do jogo">
+                    <input onkeyup="transformar_texto_maiusculo(this)" required title="Nome" type="text" name="nome" class="marcacoes" id="nome" placeholder="Nome do jogo">
 
                 </div>
                 <div class="marcacoes_jogo">
