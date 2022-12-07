@@ -7,7 +7,7 @@ $assunto = $_post['assunto'] ?? null;
 // $visualizar = $_post['visualizar'] ?? null;
 // $arquivar = $_post['arquivar'] ?? null;
 
-$query_lista_arquivos = "SELECT id, nome, email, assunto FROM mensagem; ";
+$query_lista_arquivos = "SELECT id, nome, email, assunto FROM mensagem";
 $arquivar = mysqli_query($conn, $query_lista_arquivos);
 
 

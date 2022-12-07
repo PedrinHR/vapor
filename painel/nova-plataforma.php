@@ -33,7 +33,7 @@ $error = $_GET['error'] ?? null;
 
                     <span> Adicione aqui uma nova Plataforma</span>
 
-                    <input type="plataforma" name="plataforma" id="nova_plataforma" placeholder="Plataforma" required>
+                    <input onkeyup="primeira_letra(this)" type="plataforma" name="plataforma" id="nova_plataforma" placeholder="Plataforma" required>
 
                 </div>
 

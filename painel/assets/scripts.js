@@ -81,10 +81,22 @@ function updateClock() {
 function iniciar_mudanca_de_cor() {
   setInterval(cor_aleatoria, 1000)
 }
+
+
 function transformar_texto_maiusculo(elemento){
   let valor_que_usuario_digitou = elemento.value
 
 
 
   elemento.value = (valor_que_usuario_digitou.toUpperCase())
+}
+
+
+
+
+
+function primeira_letra(elemento){
+
+  elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
+
 }

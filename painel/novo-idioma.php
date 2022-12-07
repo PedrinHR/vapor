@@ -32,7 +32,7 @@ $error = $_GET['error'] ?? null;
 
                     <span> Adicione aqui um novo Idioma</span>
 
-                    <input type="idioma" name="idioma" id="novo_idioma" placeholder="Idioma" required>
+                    <input onkeyup="primeira_letra(this)" type="idioma" name="idioma" id="novo_idioma" placeholder="Idioma" required>
 
                 </div>
 

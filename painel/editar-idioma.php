@@ -43,7 +43,7 @@ $consultar_idioma = "SELECT nome FROM idioma WHERE id = '{$id_idioma}'";
 
             
                     <label for="idioma"> Idioma </label>
-                    <input value="<?=$idioma['nome']?>" name="idioma" id="idioma" class="input_idioma" type="text">
+                    <input onkeyup="primeira_letra(this)" value="<?=$idioma['nome']?>" name="idioma" id="idioma" class="input_idioma" type="text">
                     <input value="<?=$id_idioma?>" name="id" type="hidden">
 
                 </div>

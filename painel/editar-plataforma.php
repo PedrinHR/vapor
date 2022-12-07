@@ -38,7 +38,7 @@ $plataform = mysqli_fetch_assoc(mysqli_query($conn, $consultar_plataform));
 
 
                     <label  for="Plataforma"> Plataforma </label>
-                    <input value="<?= $plataform['nome'] ?>" name="plataforma" id="plataforma" class="input_plataforma" type="text">
+                    <input onkeyup="primeira_letra(this)" value="<?= $plataform['nome'] ?>" name="plataforma" id="plataforma" class="input_plataforma" type="text">
                     <input value="<?= $id_plataform ?>" name="id" type="hidden">
 
                 </div>
@@ -53,8 +53,7 @@ $plataform = mysqli_fetch_assoc(mysqli_query($conn, $consultar_plataform));
                     <button type="submit" id="atualizar"> Atualizar </button>
                 </div>
 
-
-
+                   
 
 
 

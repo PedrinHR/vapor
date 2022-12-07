@@ -42,7 +42,7 @@ $consultar_categoria = "SELECT nome FROM categoria WHERE id = '{$id_categoria}'"
 
             
                     <label for="categoria"> Categoria </label>
-                    <input value="<?=$categoria['nome']?>" name="categoria" id="categoria" class="input_categoria" type="text">
+                    <input  onkeyup="transformar_texto_maiusculo(this)" value="<?=$categoria['nome']?>" name="categoria" id="categoria" class="input_categoria" type="text">
                     <input value="<?=$id_categoria?>" name="id" type="hidden">
 
                 </div>

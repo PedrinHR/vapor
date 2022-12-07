@@ -33,7 +33,7 @@ $error = $_GET['error'] ?? null;
 
                     <span> Adicione aqui uma nova Categoria</span>
 
-                    <input type="categoria" name="categoria" id="nova_categoria" placeholder="Categoria" required>
+                    <input onkeyup="transformar_texto_maiusculo(this)" type="categoria" name="categoria" id="nova_categoria" placeholder="Categoria" required>
 
                 </div>
 
@@ -46,7 +46,7 @@ $error = $_GET['error'] ?? null;
                     <div id="erro-nova-categoria" class="error_salva"><?= $error ?></div>
                 <?php } ?>
 
-
+                    
 
 
 
